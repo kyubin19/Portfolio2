@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kyubin's Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+    </header>
+    <!--header area end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+		<div class="inside">
+	        <h3>My <span>Home</span></h3>
+		</div> 
+		<h6>   </h6>
+        <center>
+			<img src="me.png" class="profile_image" alt="">
+			<h4>Kyubin</h4>
+			<h4>Kim</h4>
+		</center>
+		<a href="index.html"><i class="fas fa-desktop"></i><span>HOME</span></a>
+		<a href="AboutMe.html"><i class="fas fa-info-circle"></i><span>ABOUT ME</span></a>
+		<a href="tutorials.html"><i class="fas fa-table"></i><span>TUTORIALS</span></a>
+		<a href="projects.html"><i class="fas fa-th"></i><span>PROJECTS</span></a>
+		<a href="sources.html"><i class= "fas fa-cogs"></i><span>SOURCES</span></a>
+    </div>
+    <!--sidebar end-->
+	<div class="content">
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<a href="tutorials.html"><p class="linkBody">Back to Tutorials</p></a>
+		<p class="headerTitles" >Don't Fear the OOP</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" &nbsp;</p>
+		<p class = "blackText"> Here is a simple introduction to object-oriented programming, one of the major concepts of programming in Java. Although this tutorial explains OOP mostly through analogy, <strong>bolded</strong>
+		words are the actual syntax used by Java programmers, so keep a look out for them!Hopefully this will help ease you into the nature of Java, and after reading this 
+		short tutorial, all of you will have a good grasp on object-oriented programming!There are three different levels in this tutorial which are coded by colour.</p>
+		<p class="greenText">Green is for the readers who are unsure what object-oriented programming is and want the most simplest and basic introduction.</p>
+		<p class="yellowText">Yellow is for those who are not ready to learn the details in Java code itself, but still want to be able to understand object-oriented programming in order to be able to read and follow it. &nbsp;</p>
+		<p class="redText">Last but not least, red is for the eager new coders who want to slowly ease into the basics of being able to read and write code in Java.</p>
+		<p class ="blackText">Meet Gloria. Gloria writes children’s books about animals. Her readers are never disappointed, because they know that Gloria will write 
+		consistent and interesting books. How does she manage this? Before Gloria writes anything, she sits down at her desk  and places a single piece of paper where 
+		she will fit her whole story down on her desk. On every page, Gloria includes a sequence of events, or plot. Everything else such as setting, 
+		character development, and how her characters interact is all taken care of elsewhere. Let's say that she has just begun writing "Monkey Escape at the Toronto Zoo", her fifty-ninth book.
+		The first and foremost thing that Gloria requires is a setting. So, she pulls down a binder she has marked "Zoo", opens to the first page, and reads the first few lines: </p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="greenBox">Every zoo has a few key ingredients: a location, animals, a name, monkeys, and workers. A standard zoo would have ten animals and two monkeys.</p>
+		<p class="greenText">This description of a zoo did two very important things: established the key ingredients for a zoo and set some default values that would occur in a zoo. &nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="yellowBox">Zoo<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is located somewhere</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;has a certain number of animals</br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;has a name </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;has a certain number of monkeys</br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;has a certain number of workers</br><br></br>A typical Zoo would have </br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number of animals = 10</br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number of monkeys = 2</br>&nbsp;
+		</p>
+		<p class="yellowText">Although this style of writing may be quite odd it is rather straightforward to Gloria. The first line is simply allowing Gloria to define a zoo. If this name was perhaps two or more words (for e.g. TorontoZoo) she would not use a space to separate the words and would capitalize the first letter in each word. This is to prevent any confusion for her editor in Chicago. &nbsp;</p>
+		<p class="yellowText">The following step for Gloria would be to declare the <Strong>variables</Strong> that a <Strong>class</Strong> of zoos might have. <Strong>Variables</Strong> are things which define how the zoo looks such as workers, animals, monkeys, etc. The last step to be taken is to construct a standard zoo with default values for her variables (for e.g. ten animals, two monkeys, etc.) &nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="redBox">public class Zoo  { <br>String location;</br>String zooName; <br>int animalNum;</br>int monkeysNum;</br>int workersNum;</br><br>public Zoo ()  {</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;animalNum = 10;</br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;monkeysNum = 2;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br>}</br>&nbsp;
+		</p>
+		<p class="redText">Although this style of writing may be quite odd it is rather straightforward to Gloria. The first line is simply allowing Gloria to define a zoo. If this name was perhaps two or more words (for e.g. TorontoZoo) she would not use a space to separate the words and 
+		would capitalize the first letter in each word. This is to prevent any confusion for her editor in Chicago. &nbsp;<br></br><br>In order to make her Zoo, Gloria defined a<Strong>class</Strong>, not the city-specific zoo, as that would be an<Strong> object</Strong> of the class. 
+		Thus, a <Strong>class</Strong> can easily be compared to a recipe without measurements, since it includes the key ingredients of a Zoo, but not the specific amounts of each element. &nbsp;</br><br>That would be the process of <Strong>declaring </Strong> each<Strong> variable</Strong> name and value. Some common variable types include
+		<Strong>"int"</Strong> s and <Strong>"String"</Strong> for a string of letters. &nbsp;</br><br>In Gloria’s style of writing, the semicolon can be seen as a period, as it marks the end of a statement. Last but not least, 
+		a curly brace, “{“ is used to group a set of statements. This is essential for her editor to know where each set of statements begins and ends.All<Strong> classes</Strong> will end with a "}".&nbsp;</br>
+		<br>If Gloria creates <Strong>(instantiates)</Strong> a Zoo <Strong>object </Strong> later on in the book, her editor will look to this Zoo <Strong>class</Strong> binder to determine what key ingredients her Zoo should have. 
+		(Gloria will send all necessary binders with her manuscript). Her editor will find out the proper amounts of each element in the <Strong>constructor.</Strong>. &nbsp;</br>
+		<p class="redText">After declaring all of the variables, that’s where the <Strong>constructor </Strong>is found. It simply begins with public Zoo(). The statements after the method header line set the default values for her variables. In other words, how Gloria’s zoo <Strong>object</Strong> would look like if it was <Strong>instantiated </Strong> without specifying any of its values. &nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="blackText">We’ve finally finished taking a look at one of Gloria’s binders. She has completed reviewing the zoo section and decides that this children’s book should take place in a zoo! Gloria turns to the main paper on the middle of her desk and begins writing the first part of her plot.  &nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>			
+		<p class="greenBox">Monkey Escape at the Toronto Zoo 
+		<br>This story takes place in a zoo called the Toronto Zoo. The Toronto Zoo is located in Toronto, has five workers, and is called Toronto Zoo. &nbsp;</p>
+		<p class="greenText">Although it is quite a small amount of writing, Gloria has said much about this zoo. When her editor looks up “Zoo” in her binder that she sends, he will fill in the location, name, and the number of animals. Additionally, Gloria has added more specific information about the exact number of workers, the location, and the name of the zoo. Even though her main plot page only has two lines, because of the reference to her binder, her story already contains quite a bit of information. &nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="yellowBox">Main Escape<br> Zoo torontoZoo is a new Zoo.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the name of torontoZoo is Toronto Zoo.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the location of torontoZoo is Toronto.</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the number of workers in torontoZoo is five.</br>&nbsp;</p>
+		<p class="yellowText">This includes two very important steps that Gloria has taken. First of all, Gloria instantiates an <Strong>object</Strong> of type Zoo. Secondly, she fills in some information that was left out in the Zoo class, such as the name, location, and number of workers in the zoo. &nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="redBox">public class Escape {<br>public static void main (String arguments[])  {</br>Zoo torontoZoo = new Zoo ();<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;torontoZoo.name = “Toronto Zoo”;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;torontoZoo.location = “Toronto”;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;torontoZoo.workers = 5;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br><br>}</br>&nbsp;</p>
+		<p class="redText">For now, the way Gloria says things may come across as quite strange but it will start to make much more sense throughout this tutorial. Right now, the important thing to note is that the first two lines is how Gloria informs her editor that this piece of paper is her main plot.
+		When Gloria specifies the values for the variables (e.g. workers) that were not specified in the Zoo class, Gloria needs to state the name of the object (in this example, torontoZoo) which is followed by a period and then the name of the variable. It is important to note that the torontoZoo is an object of Zoo. After doing this, Gloria can then assign a value for the variable.  &nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class=blackText>Guess what, you've just witnessed some object-oriented programming! First, Gloria created a <b>class </b>(the binder) that very roughly described a Zoo. She then created (<b>instantiated</b>)
+		a zoo <b>object </b>on her <b>main </b>plot page, which she called torontoZoo. That wasn’t too hard, wasn’t it?<br>In order to create an animal, Eunice needs a different binder. So she puts &quot;Zoo&quot; back on
+		the shelf, and goes to pick up the “Animals” binder instead</br><br>She opens up to the introduction:</br></span></p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class=greenBox><span style='font-size:12.0pt;color:#42A815'>“All animals begin with two eyes, a nose, and a mouth. They have a name, arms, legs, and are either male or female. If asked, animals can respond with their name.”</span></p>
+		<p class=greenText><span style='font-size:12.0pt;color:#42A815'>Have you noticed that Gloria likes to make all body parts <b>variables</b>? The reason why she does it is to allow her to change their values later on in the story. This gives her
+		a lot of creative freedom which is why she has so many avid readers clamouring for her novels. As well, you’ll see that she left the name, arms, legs, and gender unspecified. Doing so allows Gloria to create animals with different
+		characteristics. She will specify these <b>variables </b>later on.</span></p>
+		<p class=greenText>You may find it weird that animals can respond with their names, but this is a children’s book! Anything can happen, even talking animals.</span></p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="yellowBox">Animals<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;have a name</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;have a certain number of arms</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;have a certain number of legs</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;have a certain number of eyes</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;have a certain number of noses</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;have a certain number of mouths</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;have a certain number of gender</br>&nbsp;</br>A standard animal would start with<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;two eyes</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;one nose<br></br><br> &nbsp When someone asks for its name</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tell them its name  </p>	
+		<p class="space" >&nbsp;</p>	
+		<p class=yellowText>You may have started to notice that Gloria is interactive with the animals. As it was explained previously, since this is a children's book, all these animals can talk back so they will respond
+			if Gloria asks for something like their name. This process is called a <b>method</b>in Java which will be further expanded on later on in this tutorial.</span></p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class=redBox>public class Animals&nbsp <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int legs;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int arms;</br>&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int eyes;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int nose;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int mouth;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String name;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String gender;</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public Animals ()&nbsp; {</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eyes = 2;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nose = 1;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mouth = 1;&nbsp;</br>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public String whatIsYourName()&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return name;&nbsp;</br></p>
+		<p class=redText>It all makes sense except the &quot;public String whatIsYourName()&quot; part, right? Don't worry too	much about it. We'll find out more about that very soon.</span></p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class=blackText>You may be realizing that despite how fascinating these descriptions of animals may be, they are not very specific. As Gloria needs to send a new story to her editor very soon, she quickly flips through
+		the “Animals” binder and arrives at the first chapter, entitled “Monkeys”.</span></p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class=greenBox>Monkeys are based on the idea of animals. They have the same characteristics, except that they have some additional qualities, such as a species name, a fur colour, a tail, a
+	     number of fruits eaten, and the potential to be hungry for bananas. Your default monkey will be a macaque, have brown fur, one tail, have eaten no fruit and it will be hungry for bananas. It can be in a full or empty cage.</span></p>
+		<p class=greenText>There’s nothing awfully new here, except that we have looked deeper into Gloria’s binders (<b>classes</b>) to find one of the subsections (<b>subclasses</b>). This particular subsection, monkeys, <b>extends</b>the idea of animals.</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class=yellowBox>Monkeys extends the idea of Animals&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Mondkey</br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;has species name</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;has a fur colour</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;has a tail</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;has a potential to be hungry for bananas</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;has a specified number of fruits eaten</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can be in a full or empty cage;</br>
+		<br>For a given Monkey&nbsp; {</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It will be a macaque.</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It will have brown fur.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It will have one tail.&nbsp;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It will be hungry for bananas.&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It will be in a full cage.&nbsp;</br></p>
+ 		<p class="MsoNormal" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class=redBox>public class Monkeys extends Animals  {&nbsp <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String species;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String furColour;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int tail;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boolean hungryForBananas;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int fruitsEaten</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String cageStatus;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public Monkeys ()  {;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;species = "Macaque";</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tail = 1.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hungryForBananas = true;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cageStatus = “full”;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br>}</br></p>
+		<p class=redText>This is a simple introduction to the idea of <b>subclasses</b>. &quot;Animal&quot; was a <b>class</b>,and &quot;Monkey&quot; is a <b>subclass </b>of it. You may be wondering why Gloria declared &quot;boolean hungryForBananas&quot; 
+		in this class. Think of it this way. The monkey can only be hungry for bananas or not hungry for bananas. Similarly, a <b>boolean </b>variable can only have two values: <b>true </b>or <b>false</b>. Thus, using a boolean variable makes it easy to keep track of the monkey’s hungriness.</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class=blackText>As Gloria has finally finished describing what her monkey looks like, her next course of action is to move on to some of the behaviours (<b>methods</b>) that monkeys employ.&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>		
+		<p class=greenBox>Whenever the main plot says that a monkey eats a fruit, its number of fruit eaten will go up by one.</p>
+		<p class=greenText>Did you notice how Gloria is now specifying how one of her characters acts rather than just how they look? Additionally, she is also altering one of her <b>variables </b>(in this case
+		“fruitsEaten”). Sincer her binders (<b>classes</b>) can contain information about how her characters act, Gloria is able to create a lot of character development without touching her <b>main </b>plot page.</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class=yellowBox>eatFruit<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fruit eaten increases by one</br></p>
+		<p class=yellowText>Do you notice the pattern in Gloria’s writing? This <b>method </b>is very similar to how she treated <b>variables </b>in the past. First, she indicates what she is going to describe (in this
+		case a <b>method </b>called eatFruit) and then what the method will do when she calls it in her <b>main </b>plot (<b>routine</b>).</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class=redBox>public void eatFruit () &nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fruitsEaten++;</br>} </br></p>
+		<p class=redText>Although there are quite a few strange symbols, this approach is straightforward and consistent. First of all, Gloria named the <b>method </b>&quot;eatFruit&quot;. Since the <b>method </b>name
+		is “eatFruit”, Gloria figures that she should modify the number of fruits eaten by the monkey by adding one to it, which is what the &quot;++&quot; after &quot;fruitsEaten&quot; is used for.</p>
+<		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class=blackText>The monkeys in Gloria’s stories are infamous for being able to trick their zookeepers regarding how many fruits they ate. Therefore, Gloria decides that it is a great idea to make
+		 a <b>method </b>that will force the monkey to state how many fruits it ate.&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class=greenBox>If someone asks a monkey how many fruits it has eaten, the monkey will always respond with the number of fruits it has eaten.</p>
+  		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class=yellowBox>getFruitsEaten<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tell them how many fruits it has eaten;</br></p>
+  		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class=redBox>public int getFruitsEaten() &nbsp {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return fruitsEaten;</br> } </br></p>
+		<p class=redText>Are you wondering about that “<b>int</b>” in front of the “getsFruitEaten”? Gloria had to put this in because this is a <b>method </b>that has a <b>return </b>value. In order to
+		inform the editor on what type of value was being returned, she specified “<b>int</b>” for integer in front of the name of the method.&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class=blackText>At this point Gloria is pretty proud of herself, having created a monkey that can do all monkey-like activities. However, to make an interesting ending, Gloria decides to have the
+		monkey have the ability to run away from its cage with its friend. This requires one more <b>method</b>. The difference between this <b>method </b>and her other <b>methods </b>is that it needs external information, such as the
+		monkey it will escape with. To allow for flexibility (and for a variety of monkey friends), Gloria decides to leave the identity of the monkey friend blank for now.</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class=greenBox>If a monkey has successfully run away from the cage with its friend, the monkey’s cage will be empty and a message will be printed out that says “(the monkey) has run away from its cage with (the specified friend)!”</p>
+		<p class=greenText>It is clear to see the flexibility that Gloria has in writing her stories; she can leave out some things to be specified when the plot is written. She did that by writing that the monkey friend will have a name, but not stating what it will be. She has
+		also used a <b>print </b>statement that will print out the information gathered by the <b>method </b>as an event in her book.&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class=yellowBox>runAway (friend)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set the status of the cage to empty</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print “(the monkey) has run away from its cage with (the specified friend)!”&nbsp;</br></p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class=redBox>public void runAway(Monkeys friend)  {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cageStatus = “empty”;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(this.whatIsYourName()+“has run away with"+friend.whatIsYourName()+“!”); <br>;</br></p> 
+		<p class=redText>Although the segment above may look confusing, you most likely understand most of it already! First and foremost, we have the name of the <b>method </b>“runAway”. Between the parentheses we have “Monkeys friend”. What comes between those parentheses is
+		called an <b>argument</b>. It helps make the <b>method </b>more specific. When Gloria starts writing her plot, she will at some point want her monkey to run away. However, instead of simply writing “monkey.runAway()” it would be much
+		more interesting for the monkey to run away with a friend! To make it extra fascinating she could also state the monkeys’ names. Therefore, when her plot says “runAway”, it will provide the names of the monkeys who are running away
+		as an argument. &quot;Monkeys&quot;, which comes before &quot;friend&quot;, tells her editor that the monkey that the original monkey is running away is a friend. Her editor doesn't like surprises, so that knowing that it is a fellow
+		monkey running away, rather than say, a dog, reduces the amount of guesswork on his end.</p>
+		<p class=redText>The next line changes the status of the cage to “empty”, as both monkeys have run away from the cage that they share! How mischievous…</p>
+		<p class=redText>Now that the main event has occurred, Gloria wants to let her readers know what is going on. To do so, she uses the &quot;<b>System.out.println</b>&quot; statement. This lets her
+		editor know to put all the text she puts in between quotation marks into the final copy of the book. Why is “this.whatIsYourName” and “riend.whatIsYourName” then not in quotation marks? Simply because they’re not <b>literals</b>, but
+		rather an <b>object's method</b>. By keeping it out of the quotation marks, Gloria lets her editor know that he has to go look for the friend <b>object </b>(he would find out that it was of the &quot;Monkey&quot; <b>class</b>) then for the
+		<b>method </b>&quot;whatIsYourName&quot; (he would see that it returns its name). All of that for a name!</p>
+		<p class=redText>As for “this”, it refers to the calling <b>object</b>. Every <b>method </b>needs to be called by an <b>object</b>, which in this case would be the monkey that is escaping from its cage.</span></p>
+		<p class=redText>Had she put this.whatIsYourName or friend.whatIsYourName inside of the quotation marks, her editor would have printed out in the final copy of the book: &quot;this.whatIsYourName() + “has run away with &quot; +
+		friend.whatIsYourName()&quot;. In order for her editor to substitute the <b>variable </b>name for the word name, Gloria doesn’t include them in the quotation marks. The plus sign &quot;+&quot; tells her editor to join the two statements.</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class=blackText>Let’s review what Gloria’s overall description of a monkey looks like. Don’t worry, none of this is new!</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+  		<p class="MsoNormal" >&nbsp;</p>
+		<p class=greenBox>Monkeys are based on the idea of animals. They have the same characteristics, except that they have some additional qualities, such as a species name, a fur colour, a tail, a number of fruits eaten, and the potential to be hungry for bananas. Your
+		default monkey will be a macaque, have brown fur, one tail, have eaten no fruit and it will be hungry for bananas. It can be in a full or empty cage. <br>Whenever the main plot says that a monkey eats a fruit, the number of fruits it has eaten will go up
+		by one.</br><br>If someone asks a monkey how many fruits it has eaten, the monkey will always respond with the specified value. If the villain is supposed to run away, set the status of the cage to empty, and print “(the monkey) has run away from its cage with
+	    (the specified friend)!”</br></p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p
+		<p class=yellowBox>Monkeys extends the idea of Animals.&nbsp <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Every monkey has species name</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Every monkey has a fur colour</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Every monkey has a tail</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Every monkey has a potential to be hungry for bananas</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Every monkey has a specified number of fruits eaten</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;very monkey can be in a full or empty cage</br>
+		<br>For a given Monkey,</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It will be a macaque.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It will have brown fur.</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It will have one tail.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It will be in a full cage</br><br>eatFruit</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fruit eaten increases by one.</br>	  
+		getFruitsEaten</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tell them how many fruits it has eaten..</br><br>runAway (friend)</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set the status of the cage to empty</br>		  
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print “(the monkey) has run away from its cage with (the specified friend)!” </br></p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p> <p class=redBox>public class Monkeys extends Animals  {&nbsp <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String species;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String furColour;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int tail;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boolean hungryForBananas;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int fruitsEaten;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String cageStatus</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public Monkeys ()  {</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;species = "Macaque";</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;furColour = “brown”;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tail = 1;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hungryForBananas = true;</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cageStatus = “full”;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void eatFruit ()  {</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fruitsEaten++;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void runAway(Monkeys friend) {</br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cageStatus = “empty”;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(this.whatIsYourName()+“has run away with"+friend.what IsYourName()+“!”);</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br>	
+		<br>}</br></p>  
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class=blackText>Writing about mischievous monkeys is making Eunice feel a bit tired, so she works on the main plot instead, on a sheet of paper labeled<b> main routine</b></p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class=greenBox>Here is the main plot of the Monkey Escape at the Toronto Zoo: There is a Zoo called Toronto Zoo. The Toronto Zoo is located in Toronto, has five workers, and is called Toronto
+		 Zoo. There is a male monkey named Alex. Alex has two legs, two arms, and hasn’t eaten any fruits all day! Julian is another male monkey who lives in the same cage as Alex. He also has two legs and two arms, but he has already
+		 eaten five fruits today. In the story, Alex begins by eating a fruit, then he announces how many fruits he has eaten today. Finally, Alex and Julian run away from their cage!</p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class=yellowBox>Here is the main plot of Monkey Escape at the Toronto Zoo; in the novel Escape;&nbsp <br>There is a zoo called torontoZoo</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the name of torontoZoo is Toronto Zoo.</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the location of torontoZoo is Toronto.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the number of workers in torontoZoo is five.</br>
+		<br>There is a new Monkey named Alex</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alex’s name is Alex.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alex is a male</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alex has two legs.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alex has two arms.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alex has eaten zero fruits today.</br>	  
+		<br>There is a new Monkey named Julian</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Julian’s name is Julian.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Julian is a male</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Julian has two legs.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Julian has two arms.</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Julian has eaten zero fruits today.</br>	    
+		<br>Alex eats a fruit;</br>Alex announces how many fruit he has eaten today;</br>Alex runs away from his cage with Julian;</br></p>    
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p> <p class=redBox>public class Escape  {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main (String [] args)  {</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zoo torontoZoo = new Zoo ();</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;torontoZoo.name  = “Toronto Zoo”;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;torontoZoo.location  = “Toronto”;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;torontoZoo.workers  = 5;</br>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monkeys alex = new Monkeys ();</br>	  
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alex.name = “Alex”;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alex.gender = “male”;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alex.arms = 2;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alex.legs = 2;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alex.fruitsEaten = 0;</br> 
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monkeys julian= new Monkeys ();</br>	  
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;julian.name = “Julian”;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;julian.gender = “male”;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;julian.arms = 2;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;julian.legs = 2;</br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;julian.fruitsEaten = 5;</br> 
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alex.eatFruit();</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(alex.getFruitsEaten());</br>	  
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alex.runAway(julian);</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br><br>}</br></p>  
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class=blackText>You may be wondering what is so special about this story? Well, it's not everything that's happening in the <b>main routine</b>, but rather everything that happens behind the scenes. When Gloria
+		created that zoo called Toronto Zoo, she created (<b>instantiated</b>) an <b>object </b>of type Zoo. This <b>object </b>had all the characteristics of a standard Zoo. The same applies for the Alex <b>object </b>and the Julian <b>object</b>.
+		While some of the traits of these <b>objects </b>were specified (<b>initialized</b>) at the time of creation, most of their traits were specified back in the binders (<b>classes</b>). This allowed Gloria to create a lot of character
+		development while only saying a little bit in her main plot.<br>In the end, Gloria’s main plot turns out to be nothing more than a collection of references to <b>objects</b>, which in turn are references to <b>classes</b>.&nbsp;</br>
+		<br>So what are the benefits of writing in such a manner? This is much more efficient because if Gloria decided that she wanted Julian to eat less fruits. Instead of going back and laboriously changing every minor detail, Gloria can just make a few alterations
+		to the Julian <b>object </b>at the time of instantiation. She's got a lot of options, but the point is that she only needs to make the changes in one place.</br>
+		<p class=blackText><strong>Who is the editor?</strong></b></p>
+		<p class=blackText>There have been many references to Gloria’s editor in Chicago, but who is he and what does he do? He takes all of Gloria’s scripts, reads them, identifies all of her errors, and
+		then returns them. On the. computer, this is known as the <b>compiler</b>. All Java programs must be <b>compiled </b>before they can be run. The compiler will tell you everything that you did wrong, time and time again. <br>Now that you have a basic
+		grasp on object-oriented programming in Java, it’s time for you to use these concepts to write your own novel. Try it first in english, then pseudocode, then finally in Java syntax! Who knows what you’ll create? The world is at your
+		fingertips!</br></p>	
+		<a href="tutorials.html"><p class="linkBody">Back to Tutorials</p></a>		
+	</div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kyubin's Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+    </header>
+    <!--header area end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+		<div class="inside">
+	        <h3>My <span>Home</span></h3>
+		</div> 
+		<h6>   </h6>
+        <center>
+			<img src="me.png" class="profile_image" alt="">
+			<h4>Kyubin</h4>
+			<h4>Kim</h4>
+		</center>
+			<a href="index.html"><i class="fas fa-desktop"></i><span>HOME</span></a>
+			<a href="AboutMe.html"><i class="fas fa-info-circle"></i><span>ABOUT ME</span></a>
+			<a href="tutorials.html"><i class="fas fa-table"></i><span>TUTORIALS</span></a>
+			<a href="projects.html"><i class="fas fa-th"></i><span>PROJECTS</span></a>
+		    <a href="sources.html"><i class= "fas fa-cogs"></i><span>SOURCES</span></a>
+    </div>
+    <!--sidebar end-->
+	<div class="content">
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<a href="tutorials.html"><p class="linkBody">Back to Tutorials</p></a>
+		<p class="headerTitles" >Inheritance</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" &nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">Inheritance is an important pillar of OOP(Object Oriented Programming). It defines a relationship between objects that share the same characteristics. It is a mechanism
+		 where a new class (subclass) is created from an existing class (superclass). The subclass inherits the characteristics of its superclass meaning that the subclass absorbs its state and behaviours 
+		 and adds its own unique features. There are many benefits of inheritance, some of them being that you can avoid duplicate code, define a common protocol for a group of classes, and reuse code 
+		 that has already been tested or bugged. Be aware that a subclass is actually bigger than a superclass contrary to the names, as it contains more methods and data.  &nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">A subclass can also be a superclass for another subclass which can lead to an inheritance hierarchy of classes. There are two types of relationships in a hierarchy: 
+		an Is-A relationship and a Has-A relationship. The diagram below is a model of the relationship between the following objects: Animal, Dog, Basset Hound, and Maltese. In order to determine 
+		the type of relationship it is, using some key sentences can be very helpful. It can be determined as an is-a relationship, when using the phrase, "is an example of" or "is a type of" 
+		between two objects, and the sentence makes sense. For example, "A subclass is type of class" or "The Basset Hound is a type of Dog". On the other hand, some clues for a has-a relationship 
+		can be determined by the phrases, "Has ownership of" or "contains". For example, "A class contains a property", or "My dog has ownership of a collar. Based on the diagram below, a Dog is-a
+		 Animal, a BassetHound is-a Dog, and a Maltese is-a Dog.&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<img src="Tree.png" style = "width:30%; height:auto; margin-left:430px;"alt="">
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">	In order to implement subclasses, the keyword extends must be used. The general format should look like the following:  </p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment"><br>public class Superclass{</br><br>&nbsp;&nbsp;&nbsp;&nbsp;//methods, constructors, variables, and additional data members</br><br>}</br><br>public class Subclass extends Superclass{</br><br>
+		//methods, constructors, variables, and additional data members</br><br>}</br></p>			
+		<p class="space" >&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">	Now, consider the following classes below in which the Dog subclass extends the Animal superclass:</p>
+		<p class="space" >&nbsp;</p>
+		<img src="Animal1.png" style = "width:100%"alt="">
+		<img src="Animal2.png" style = "width:100%"alt="">
+		<p class="space" >&nbsp;</p>
+		<img src="Dog1.png" style = "width:100%"alt="">
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">	In the Animal example, the Dog subclasses inherits all of the methods of the Animal superclass. Although a subclass inherits the public and protected of its superclass, 
+		it does not inherit the private methods or instance variables. In order for a subclass to access these, the mutator and accessor methods should be used. Seen in the example above, as the age and 
+		name variables of the Animal are private, the public getter and setter methods are invoked. This is why the Dog uses getAge() to access and modify the variable type.</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">	By defining a method with the same return type and method signature, any method in the super class can be overridden in a subclass. If the code to overwrite the 
+		method includes a call to the superclass method, it is called partial overriding. This can occur when the subclass wants to do something extra to what the superclass already does. This 
+		can be achieved by using the keyword super in the implementation. However, make sure to note that private methods cannot be overridden. The incrementAge() method in the Dog subclass 
+		partially overrides the matching method in the Animal class. The statement super.incrementAge() signals that the incrementAge in the super should be invoked. The additional test</p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment"><br>&nbsp;&nbsp;&nbsp;&nbsp;if(getAge() < 3) {</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setType("puppy");</br>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;} else {</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setType("fully grown dog");</br>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;}</br></p>		
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">	This allows a Dog to have a type, “puppy” if the age is less than 3 and a “fully grown dog” if the age is greater than 3.</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">	Another important concept to know is that constructors cannot be inherited. If there is no constructor that is written for a subclass, the default constructor 
+		with no parameters in the superclass will be generated. A compilation error will occur if there is no constructor in the superclass with zero parameters. A subclass constructor can be 
+		implemented with a call to the super method which would invoke the superclass constructor. This can be demonstrated by the statement super() used in the default constructor of the Dog 
+		subclass. However, the second constructor is called with parameters that match the ones used in the Animal superclass. Additionally, since there is the new instance variable breed in 
+		the subclass, it must also be explicitly initialized. A key fact to remember is that if super is used in the implementation of a subclass constructor, it must be used in the first 
+		line of the constructor body.</p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment"><br>&nbsp;&nbsp;&nbsp;&nbsp;public Dog(int animalAge, String animalName, String dogBreed) {</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super(animalAge, animalName);</br>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;breed = dogBreed;</br>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;}</br></p>	
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">	Hopefully, this tutorial has given you a better idea about inheritance and the important concepts.</p>	
+		<a href="tutorials.html"><p class="linkBody">Back to Tutorials</p></a>	
+	</div>
+  </body>
+</html>

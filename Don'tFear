@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sidebar Dashboard Template</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+    </header>
+    <!--header area end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+		<div class="inside">
+	        <h3>My <span>Home</span></h3>
+		</div> 
+		<h6>   </h6>
+        <center>
+			<img src="me.png" class="profile_image" alt="">
+			<h4>Kyubin</h4>
+			<h4>Kim</h4>
+		</center>
+			<a href="index.html"><i class="fas fa-desktop"></i><span>HOME</span></a>
+			<a href="AboutMe.html"><i class="fas fa-info-circle"></i><span>ABOUT ME</span></a>
+			<a href="tutorials.html"><i class="fas fa-table"></i><span>TUTORIALS</span></a>
+			<a href="projects.html"><i class="fas fa-th"></i><span>PROJECTS</span></a>
+			<a href="#"><i class= "fas fa-cogs"></i><span>SOURCES</span></a>
+    </div>
+    <!--sidebar end-->
+	    <div class="content">
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="headerTitles" >Some Standard Classes</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+			<p class="space" &nbsp;</p>
+			<p class="space" >&nbsp;</p>
+			<p class="explanation">There are multiple standard methods in Java that can be very helpful to a programmer. A method is a block of code that can be called
+			from another location in the program or class. It is used to reduce the repetition of multiple lines of code. &nbsp;</p>
+			<p class="space" >&nbsp;</p>
+			<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+			<p class="subHeadings" >Object Class</p>
+			<p class="space" >&nbsp;</p>
+			<p class="explanation">First and foremost, there is the Object class. This is also known as the universal superclass as every class automatically extends Object,
+			which means that the Object is a direct or indirect superclass of every other class. There are many methods in Object, but since object is not an abstract class, 
+			all of its methods have implementation. We will be covering the toString method and the equals method.&nbsp;</p>
+			<p class="space" >&nbsp;</p>
+			<p class="codeSegment">public String toString()</p>			
+			<p class="space" >&nbsp;</p>
+			<p class="explanation">	When you try to print an object, your result will be the class name followed by a meaningless number (the address in memory of the object).
+			You need to override the toString method and it will return a version of your object in String form. Keep in mind that Array objects do not have a toString method 
+			so in order to print the elements of an array, the array must be traversed and each element must be specifically printed. </p>
+			
+			<p class="space" >&nbsp;</p>
+			<p class="codeSegment">public boolean equals (Object other)</p>			
+			<p class="figureHeadings"><strong>example:</strong></p>			
+			<p class="codeSegment">Date d1 = new Date("January", 14);</p>			
+			<p class="codeSegment">Date d2 = new Date("January", 14);</p>			
+			<p class="codeSegment">System.out.print(d1.equals(d2));</p>			
+			<p class="space" >&nbsp;</p>
+			<p class="explanation">	This method returns true if this object and other are the same object, and false otherwise. Being the same object means that both objects 
+			are referencing the same memory slot. Keep in mind that the operators <, >, and so on are not overloaded in Java. In order for you to compare objects you are required
+			to either use the equals method or the compareTo method.</p>
+			<p class="space" >&nbsp;</p>
+			<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+			<p class="space" >&nbsp;</p>
+			
+			<p class="subHeadings" >String Class</p>
+			<p class="space" >&nbsp;</p>
+			<p class="explanation">Next, we have the String class. An object of the type String is a sequence of characters. As String objects are immutable, meaning that
+			there are no methods to change them after their creation, you can create a new String that is a mutated form of an existing String. Additionally, all string literals,
+			anything that consists of zero or more characters including escape sequences and are surrounded by double quotes, are implemented as instances of the String class. &nbsp;</p>
+			<p class="space" >&nbsp;</p>
+			<p class="codeSegment">int compareTo (String otherString)</p>	
+			<p class="figureHeadings"><strong>example:</strong></p>			
+			<p class="codeSegment">System.out.println("a".compareTo("b"));  → -1</p>
+			<p class="codeSegment">System.out.println("b".compareTo("a"));  → 1</p>
+			<p class="codeSegment">System.out.println("a".compareTo("a"));  → 0</p>			
+			<p class="space" >&nbsp;</p>
+			<p class="explanation">	The first method that we will be discussing is the compareTo method. For this method, the characters of the String values are compared 
+			according to their position in the ASCII table. Key facts to remember are that digits precede the capital letters, which precede the lowercase letters. Starting 
+			at the left end of both strings, a character-by-character comparison is done until the first character in which both strings differ is found. If the value at this 
+			index of the first String precedes the value of the second String, the first string will come first and the method will return a negative number. If the second string 
+			precedes the first, the method returns a positive number. If the two strings are identical, a value of 0 will be returned. Remember that you should not use == to 
+			compare Strings as it will only compare their reference not the actual strings. </p>
+			<p class="space" >&nbsp;</p>
+			
+			
+			<p class="codeSegment">int length()</p>	
+			<p class="figureHeadings"><strong>example:</strong></p>			
+			<p class="codeSegment">String s = "hello";</p>			
+			<p class="codeSegment">System.out.println(s.length());   →  5</p>			
+			<p class="space" >&nbsp;</p>			
+			<p class="space" >&nbsp;</p>
+			<p class="explanation">This is a pretty straightforward method that is used commonly in Java which will return the integer value of the length of the desired string. </p>		
+			<p class="space" >&nbsp;</p>
+			
+			<p class="codeSegment">String substring (int startIndex)</p>	
+			<p class="figureHeadings"><strong>example:</strong></p>			
+			<p class="codeSegment">System.out.println(s.substring(3)); → "lo";   →  5</p>			
+			<p class="space" >&nbsp;</p>			
+			<p class="explanation">The next method is the substring method which will return the substring of the string. The substring will start with the value at the 
+			startIndex and extend to the end of the string. One precaution is that this method can throw an IndexOutOfBoundsException if the startIndex is either a negative 
+			value or larger than the length of the string. </p>		
+			<p class="space" >&nbsp;</p>
+			
+			<p class="codeSegment">String substring (int startIndex, int endIndex) </p>	
+			<p class="figureHeadings"><strong>example:</strong></p>			
+			<p class="codeSegment">System.out.println(s.substring(1, 3)); → "el"</p>			
+			<p class="space" >&nbsp;</p>			
+			<p class="explanation">This method also returns a substring of the string but will start at the character at the startIndex and extend to the endIndex-1. If 
+			the startIndex is greater than the endIndex, endIndex is larger than the length of the string, or the startIndex is negative, a StringIndexOutOfBoundsException
+			can be thrown.</p>		
+			<p class="space" >&nbsp;</p>
+			
+			<p class="codeSegment">int indexOf (String str) </p>	
+			<p class="figureHeadings"><strong>example:</strong></p>			
+			<p class="codeSegment">String s = "coronavirus"</p>			
+			<p class="codeSegment">int x = s.indexOf("virus"); → 6</p>			
+			<p class="space" >&nbsp;</p>			
+			<p class="explanation">This method will return the index of the first occurrence of a str within the string. If the str cannot be found, the value -1 is returned. 
+			Be aware that this method can throw a NullPointerException if the str is null. </p>		
+			<p class="space" >&nbsp;</p>
+			<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+			
+			<p class="subHeadings" >Math Class</p>
+			<p class="space" >&nbsp;</p>
+			<p class="explanation">Here is a table of the the basic math functions: </p>	
+			<p class="space" >&nbsp;</p>
+			<p class="figureHeadings" ><strong>Math Function </strong></p>
+			<p class="codeSegment">static int abs (int x)     //Will return the absolute value of integer x</p>			
+			<p class="codeSegment">static double abs (double x)  //Will return the absolute value of double x</p>			
+			<p class="codeSegment">static double pow (double base, double exp)  //Will return the base^exp</p>			
+			<p class="codeSegment">static double sqrt (double x)  //Will return the square root of the double value x </p>			
+
+			<p class="space" >&nbsp;</p>
+			<p class="explanation">Let us dive into the specifics of using the Math.random() function in Java. The following statement: </p>		
+			<p class="space" >&nbsp;</p>
+			<p class="codeSegment">double r = Math.random(); </p>				
+			<p class="space" >&nbsp;</p>		
+			<p class="explanation">This would generate a random real number in the ranges 0.0 to 1.0, in which 0.0 is included but 1.0 is not.
+			Fortunately, this range can be scaled and shifted. In general, in order to produce a random real value in the range lowValue <= x < highValue. The general formula is:</p>		
+			<p class="space" >&nbsp;</p>
+			<p class="codeSegment">double x = (highValue - lowValue) * Math.random() + lowValue;</p>			
+			<p class="space" >&nbsp;</p>	
+			<p class="explanation">On the other hand, if you desire to randomly generate an integer value, you can use the cast to int and shift values to produce random integers in any range.
+			 The general formula when k represents the scaling factor and the p is the shifting value, the formula is: </p>		
+			<p class="space" >&nbsp;</p>
+			<p class="codeSegment">int n = (int)(Math.random() * k) + p;</p>			
+			<p class="space" >&nbsp;</p>
+			<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+	</div>

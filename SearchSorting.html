@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kyubin's Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+    </header>
+    <!--header area end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+		<div class="inside">
+	        <h3>My <span>Home</span></h3>
+		</div> 
+		<h6>   </h6>
+        <center>
+			<img src="me.png" class="profile_image" alt="">
+			<h4>Kyubin</h4>
+			<h4>Kim</h4>
+		</center>
+			<a href="index.html"><i class="fas fa-desktop"></i><span>HOME</span></a>
+			<a href="AboutMe.html"><i class="fas fa-info-circle"></i><span>ABOUT ME</span></a>
+			<a href="tutorials.html"><i class="fas fa-table"></i><span>TUTORIALS</span></a>
+			<a href="projects.html"><i class="fas fa-th"></i><span>PROJECTS</span></a>
+		    <a href="sources.html"><i class= "fas fa-cogs"></i><span>SOURCES</span></a>
+    </div>
+    <!--sidebar end-->
+	<div class="content">
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>   
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<a href="tutorials.html"><p class="linkBody">Back to Tutorials</p></a>
+		<p class="headerTitles" >Searching & Sorting</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" &nbsp;</p>
+		<p class="explanation">When dealing with large quantities of data, it is crucial to know how to search for an element in a given array, and to sort 
+		it in either ascending or descending order. In this section, I will be covering four sorting algorithms: selection sort, bubble sort, insertion sort, 
+		and merge sort and their corresponding time complexities. Additionally, the searching algorithms: binary search and sequential search will be discussed. &nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="subHeadings" >Sorting Algorithms</p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation"><strong>Selection Sort</strong><br><br>Selection sort is a sorting algorithm that can be used to sort a set of elements. Partitions are made within the given array,
+		containing the sorted and unsorted elements. These partitions will be referred to as subarrays, with the understanding that 2 new arrays are NOT created 
+		and that they’re merely subsections within the given array. After every iteration, the sorted subarray increases in size by 1, while the unsorted subarray 
+		decreases in size by 1. In order to sort in ascending order, selection sort repeatedly searches through the unsorted part of the data set to find the smallest
+		value and then swaps it with the first element of the unsorted part. That smallest value is now sorted. This continues until there are no more unsorted elements.
+		The code for using selection sort is as follows: &nbsp;</br></p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment"><br>public void selectionSort(int array[])  { </br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//moves boundary of unsorted subarray by 1</br><br>&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp; for (int i = 0; i < array.length-1; i++)  {</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Find the minimum element in unsorted 
+		array </br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int minIdx = i; </br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;for (int j = i+1; j < arr.length; j++)  </br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		if (array[j] < array[minIdx]) </br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;minIdx = j; </br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Swap the found minimum element with the first element 
+		</br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int temp = array[minIdx]; </br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array[minIdx] = array[i];
+		</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array[i] = temp; </br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} </br><br> } </br> </p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">One analogy to understand selection sort may be through cards. It is often natural for us to sort the cards in our hands in 
+		ascending order when playing games such as president or poker. The following video demonstrates how selection sort would work using cards. &nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<center><video width="100%" height="auto"  controls muted>
+		<source src="Cards.mp4" type="video/mp4">
+		Your browser does not support this video format.
+		</video></center>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">Time complexity estimates how an algorithm performs regardless of the kind of machine it runs on. You can get the time complexity
+		by “counting” the number of operations performed by your code. This time complexity is defined as a function
+		of the input size using Big-O notation. indicates the size of the input, while O is the worst-case scenario growth rate function. &nbsp; <br> </br> <br>
+		For selection sort, in both the worst-case and best-case scenarios, you have to iterate over every element in the given array, as there is no way of knowing 
+		whether an array is sorted or not without traversing every element. If n is the length of the array, you would have to perform n sorts in the worst-case 
+		scenario, as all elements would be out of place. This means that the worst-case runtime would be O(n²). In the best-case scenario, although you do still have 
+		to traverse every element of the array, no swaps would have to be performed because all elements would already be sorted. This means that the best-case runtime
+		would be Ω(n²).</br></p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation"><strong>Bubble Sort</strong><br><br>Bubble sort is one of the most simplest sorting algorithms. It works by considering adjacent elements in pairs and compares the two values. 
+		For sorting a list of elements in ascending order, if the second value is smaller, it will swap sports. To sort in descending order, if the second value is greater,
+		it will swap spots. This process will repeat no pairs can be swapped. The following diagram will illustrate the steps to sort the given array in ascending order:</br></p>
+		<p class="space" >&nbsp;</p>
+		<img src="BubbleSort.png" style = "width:870px; margin-left:190px;"alt="">
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">As you can see, the array above is not in order. Using the bubble sort algorithm, it will continue to loop until no more swaps can be
+		made. The code for using bubble sort is as follows: </p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment"><br>public void bubbleSort(int array[]){</br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int n = array.length;</br><br>&nbsp;&nbsp;&nbsp;
+		&nbsp;for (int i = 0; i < n-1; i++){</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int j = 0; j < n-i-1; j++){
+		</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (array[j] > array[j+1]){ </br><br>&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// swap array[j+1] and array[i]</br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;int temp = array[j];</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;array[j] = array[j+1];</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;array[j+1] = temp;</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} </br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</br><br>&nbsp;&nbsp;&nbsp;&nbsp;}</br><br>}</br></p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation"><strong>Insertion Sort</strong><br><br>If you think of the first element in the array arr[0] as being sorted with respect to itself, the array can now be thought of as 
+		consisting of two parts: a sorted list followed by an unsorted list. The idea of the insertion sort is to move elements from the unsorted list to the sort list 
+		one at a time; as each item is moved, it is inserted into its correct position in the sorted list. In order to place the item, a few elements may need to be moved
+		to the right to create a slot for that element. Here is a demonstration of six elements being sorted insertion sort. </br></p>
+		<p class="space" >&nbsp;</p>
+		<img src="InsertionSort.png" style = "width:970px; margin-left:190px;"alt="">
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">The code for insertion sort is as follows:  </p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment"><br>public void insertionSort(int arr[]) {</br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int n = arr.length; </br><br>&nbsp;&nbsp;&nbsp;
+		&nbsp;for (int i = 1; i < n; ++i) { </br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int key = arr[i]; </br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int j = i - 1;  </br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Move elements of arr[0..i-1], that are greater than key, to one position ahead of their current position</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;while (j >= 0 && arr[j] > key) {</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;arr[j + 1] = arr[j];</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;j = j - 1; </br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; arr[j + 1] = key;</br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;  }</br><br>}</br></p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation"><strong>Merge Sort</strong><br><br>The merge sort uses a divide and conquer algorithm that is much more efficient than some of the other algorithms. In merge sort, in 
+		an unsorted list of n elements, the recursive calls break the list into n sublists each of a length of 1. Recursively, each adjacent pair of lists are 
+		recursively merged. There are then approximately n/2 lists of length 2, and it continues until there is only one list of length n. One of the major disadvantages
+		of merge sort is that it needs a temporary array that is as large as the original array to be sorted, which could be a problem if space was a factor. As well, 
+		since merge sort is not affected by the initial ordering of the elements, best, worst, and average cases would have similar run times. The following diagram illustrates the merge sort:</br></p>
+		<p class="space" >&nbsp;</p>
+		<img src="MergeSort.png" style = "width:970px; margin-left:130px;"alt="">
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">The code for merge sort is as follows:  </p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment"><br>public static void mergeSort(ArrayList<Integer> intList, int low, int high){</br><br> &nbsp;&nbsp;&nbsp;&nbsp;int middle; </br><br>&nbsp;&nbsp;&nbsp;
+		&nbsp;if (low < high){</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;middle = (low + high) / 2; </br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mergeSort(intList, low, middle); </br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mergeSort(intList, middle+1, high); </br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;merge(intList, low, middle, high);</br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp; }</br><br>}</br><br></br><br>public static void merge(ArrayList<Integer> intList, int low, int middle, int high){</br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int lowPointer, highPointer, correctLoc; </br><br>&nbsp;&nbsp;&nbsp;
+		&nbsp;ArrayList<Integer> tempList = new ArrayList<Integer>(); </br><br>&nbsp;&nbsp;&nbsp;&nbsp; // copy the original ArrayList to a separate, temporary ArrayList </br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp; for (int i = 0; i < intList.size(); i++){</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tempList.add(intList.get(i));</br><br>&nbsp;&nbsp;&nbsp;&nbsp; }</br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp; // set pointer positions</br><br>&nbsp;&nbsp;&nbsp;&nbsp; lowPointer = low;</br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp; highPointer = middle + 1;</br><br>&nbsp;&nbsp;&nbsp;&nbsp; correctLoc = low;</br><br>&nbsp;&nbsp;&nbsp;&nbsp; // copy the lowest element from each
+		half IN ORDER</br><br>&nbsp;&nbsp;&nbsp;&nbsp; while (lowPointer <= middle && highPointer <= high){</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (tempList.get(lowPointer) <= tempList.get(highPointer)){
+		</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; intList.set(correctLoc, tempList.get(lowPointer));</br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; correctLoc++;</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		lowPointer++;</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; intList.set(correctLoc, tempList.get(highPointer));
+		</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; correctLoc++;</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; highPointer++;</br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</br><br>&nbsp;&nbsp;&nbsp;&nbsp; }</br><br>&nbsp;&nbsp;&nbsp;&nbsp; // copy remaining elements from first half (if any)
+		</br><br>&nbsp;&nbsp;&nbsp;&nbsp; while (lowPointer <= middle){</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; intList.set(correctLoc, tempList.get(lowPointer));
+		</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; correctLoc++;</br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; highPointer++;</br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp; }</br><br>}</br></p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>	
+		<p class="subHeadings" >Searching Algorithms</p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation"><strong>Sequential search</strong><br><br>There can be many situations where it is required to find for a key in a list of n elements. A sequential search would start at the 
+		first element and compare the key to each element in turn until the key is found or there are no more elements left to examine in the list. If the list is sorted, 
+		(in ascending order), you would stop searching as soon as the key is less than the current list element. The diagram below illustrates the sorting process in an 
+		array of 6 elements for the key 2.&nbsp;</br></p>
+		<p class="space" >&nbsp;</p>
+		<img src="SequentialSearch.png" style = "width:970px; margin-left:130px;"alt="">
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">The code for using sequential search is as follows:&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment"><br>public static int sequentialSearch(int[] array, int key) {</br><br> &nbsp;&nbsp;&nbsp;&nbsp;for(int i=0;i<array.length;i++){ </br><br>&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(array[i] == key){ </br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return i; </br><br>&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} </br><br>&nbsp;&nbsp;&nbsp;&nbsp;}</br><br>&nbsp;&nbsp;&nbsp;&nbsp;return -1;</br><br>}</br></p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation"><strong>Binary Search</strong><br><br>Binary search is an efficient algorithm for finding an item if the elements are in a sorted array. Binary search is a divide and conquer 
+		search algorithm. It works by repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed down the possible locations
+		to just one. If the key is not in the array, it will return -1. The diagram below demonstrates visually how binary sort works when searching for the number 5 in the 
+		given array.&nbsp;</br></p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment">a[0]&nbsp;&nbsp;&nbsp;&nbsp;a[1]&nbsp;&nbsp;&nbsp;&nbsp;a[2]&nbsp;&nbsp;&nbsp;&nbsp;a[3]&nbsp;&nbsp;&nbsp;&nbsp;a[4]&nbsp;&nbsp;&nbsp;&nbsp;
+		a[5]&nbsp;&nbsp;&nbsp;&nbsp;a[6]&nbsp;&nbsp;&nbsp;&nbsp;a[7]&nbsp;&nbsp;&nbsp;&nbsp;a[8]<br>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21</br>
+		<br>First pass: low is 0, high is 8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mid = (0+8)/2 = 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check a[4]</br>
+		Second pass: low is 0, high is 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mid = (0+3)/2 = 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check a[1]</br>
+		Third pass: low is 2, high is 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mid = (2+3)/2 = 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check a[2] Yes!!</br></p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">	The code for using binary search <strong>iteratively</strong> is the following: </p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment"><br>public int BinarySearch(int[] array,int key) {</br><br> &nbsp;&nbsp;&nbsp;&nbsp;int midPosition = 0; </br><br>&nbsp;&nbsp;&nbsp;
+		&nbsp;int lowPosition = 0;</br><br>&nbsp;&nbsp;&nbsp;&nbsp;int highPositon = array.length-1;</br><br>&nbsp;&nbsp;&nbsp;&nbsp;while(lowPosition <= highPosition){</br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;midPosition =(highPosition+lowPosition)/2; </br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(array[midPosition] <key){ </br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;lowPosition = midPosition + 1; </br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else if(inputArray[midPosition] > key){ </br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array = midPosition - 1; </br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else{ </br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return midPosition;</br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} </br><br>&nbsp;&nbsp;&nbsp;&nbsp;} </br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;return -1; </br><br>}</br></p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">	Hopefully now you are aware of the different searching and sorting algorithms which will be extremely helpful with future coding assignments!</p>
+		<p class="space" >&nbsp;</p>	
+		<a href="tutorials.html"><p class="linkBody">Back to Tutorials</p></a>
+	 <div>
+  </body>
+</html>

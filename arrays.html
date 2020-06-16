@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kyubin's Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+    </header>
+    <!--header area end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+		<div class="inside">
+	        <h3>My <span>Home</span></h3>
+		</div> 
+		<h6>   </h6>
+        <center>
+			<img src="me.png" class="profile_image" alt="">
+			<h4>Kyubin</h4>
+			<h4>Kim</h4>
+		</center>
+		<a href="index.html"><i class="fas fa-desktop"></i><span>HOME</span></a>
+		<a href="AboutMe.html"><i class="fas fa-info-circle"></i><span>ABOUT ME</span></a>
+		<a href="tutorials.html"><i class="fas fa-table"></i><span>TUTORIALS</span></a>
+		<a href="projects.html"><i class="fas fa-th"></i><span>PROJECTS</span></a>
+		<a href="sources.html"><i class= "fas fa-cogs"></i><span>SOURCES</span></a>
+    </div>
+    <!--sidebar end-->
+    <div class="content">
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<a href="tutorials.html"><p class="linkBody">Back to Tutorials</p></a>
+		<p class="headerTitles" >Arrays</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" &nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">An array is a data structure that is used to store multiple values of the same data type in a single variable, instead of declaring 
+		separate variables for each value. For example, if there were 15 test scores, instead of having 15 individual integer variables, an array of the integer data 
+		type could hold all 15 numerical values. In Java, as an array is an object, the keyword <strong>new</strong> must be used in the declaration. To declare an array, the data 
+		type and length must be established. The size of an array remains fixed once the array is created. Additionally, square brackets [] should be used to indicate
+		that an array is being created. An example of a declaration statement for an integer array with a length of 3 would be as follows:&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment">int [] arr = new int [3];</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">	When arrays are declared in this manner, the elements are automatically initialized to 0 for the primitive numeric data types,
+		false for boolean variables, and null for object references. Each item in an array is called an <em>element</em>, and each element is accessed by its 
+		numerical <em>index</em>. The first index of an array is always 0 and the last is the length of the array - 1. This would explain why arr[3] would be 
+		used to access the fourth element in an array. To initialize an array, individually assign each element to a value (Figure 1) or use an initializer 
+		list, in which all the values of the array would be written in curly braces {} (Figure 2).</p>
+		<p class="space" >&nbsp;</p>
+		<p class="figureHeadings" ><strong>Figure 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Figure 2</strong></p>
+		<p class="codeSegment"><br>arr[0] = 4;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; arr = {4, 8, 12};</br><br>arr[1] = 8;</br><br>arr[2] = 12;</br></p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">When the number of elements in an array is either unknown or needed, the Java array has a unique instance variable
+		<em>length</em> that can be accessed. This length variable can be used in many situations, the most common one being for the traversal of an 
+		array. When traversing/ loop through an array, a for loop (Figure 3) can be used to access the index of any element, replace or remove elements
+		, or to access only a few of the elements.&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="figureHeadings" ><strong>Figure 3</strong></p>
+		<p class="codeSegment"><br>for (int x = 0; x &lt; arr.length; x++){</br><br>&nbsp;&nbsp;&nbsp;&nbsp; System.out.println (arr[x]);</br><br>}</br></p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">In the for loop (Figure 3) , the loop counter variable x which starts at 0, will increase by 1 while it is less than
+		the length of the array. This will result in every element of this array to be printed on the next line as it will access all the elements at
+		index (x).&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="figureHeadings" ><strong>Figure 4</strong></p>
+		<p class="codeSegment"><br>for (int x : arr){ </br><br>&nbsp;&nbsp;&nbsp;&nbsp; System.out.println (arr[x]);</br><br>}</br></p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">On the other hand, a for-each loop, which is another way to traverse an array, can access every element in an array 
+		<u>without</u> replacing or removing any elements. (Figure 4) This will print the same values as the previous array traversal (Figure 3).
+		Although the situations to use a for-each loop is quite limited, an advantage of using a for-each loop is that it would be less likely for
+		the program to throw an ArrayIndexOutOfBonds Exception. This exception is thrown if the programmer attempts to access an index that is
+		outside of the range between 0 and the length -1 which can be a common mistake when using the regular for loop.&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">Since arrays are treated as objects, passing an array as a parameter would mean passing the object reference. Since a copy 
+		of the array passed is not made, the elements of the actual array can be altered and accessed.</p>
+		<p class="MsoNormal" >&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="headerTitles" >ArrayLists</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" &nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="subHeadings" >What are ArrayLists?</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">An alternative way of storing a list of objects in Java is the ArrayList<E> class. The ArrayList<E> class 
+		implements the List<E> interface. There are several  advantages of using an ArrayList over an array. First and foremost, the size of
+		an ArrayList can shrink and grow as needed whereas an array has a fixed length that is set when the array is declared. In addition,
+		insertion or deletion of an element can be completed with a single statement for an Arraylist, whereas more code is required to shift 
+		all the elements for an array. However, one important fact to note about ArrayLists is that no primitive types can be stored in ArrayLists.
+		As an ArrayList must contain objects, numbers must be boxed by being placed in wrapper classes like Integer and Double before insertion
+		into an ArrayList. In order to find the numerical value of a Double or Integer object, the intValue() or doubleValue() method can be 
+		invoked. Therefore, the statement below would create an ArrayList of Integer objects.&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="figureHeadings" ><strong>Figure 1</strong></p>
+		<p class="codeSegment">ArrayList <Integer> list = new ArrayList<Integer>();</p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="subHeadings" >Methods of the ArrayList</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">Given that the ArrayList has been created, the methods of List<E> can now be implemented.&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation"> <strong>add(E obj)</strong><br></br>Firstly, the add(E obj) method can be used to add elements to the ArrayList .&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment">list.add(12);</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">When there is more than one element in the ArrayList, this value would be added to the end of 
+		the list. The following diagram would illustrate the current contents in the ArrayList.&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<img src="ArrayList1.png" style = "width:50%; height: auto; "alt="">
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">If you wanted to add an element at index 0, the add(int index, E element) method can be used. 
+		The following diagram would illustrate the current contents in the ArrayList. &nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment">list.add(0, 3);</p>
+		<p class="space" >&nbsp;</p>
+		<img src="ArrayList2.png" style = "width:50%; height: auto; "alt="">
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>	
+		<p class="explanation"><strong>get (int index)</strong><br></br>Next, the method get (int index) would return the element at position index in the list &nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment">list.get(1);</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">If this was printed, as the element at index 1 in the list is 12, it would return 12. &nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation"><strong>set (int index, E obj)</strong><br></br>To replace an element, the method set (int index, E obj) can be used to replace the 
+		element position index with obj.&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment">list.set(0,9);</p>
+		<p class="space" >&nbsp;</p>
+		<img src="ArrayList3.png" style = "width:50%; height: auto; "alt="">
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">As you can see, the element at index 0 which was originally 3 has been replaced with 9.&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation"><strong>remove (int index)</strong><br></br> Following that, the remove (int index) method would remove the element from the position index.
+		Two key things to notice is that this would also move elements to the right of the position index have 1 subtracted from
+		their indices and that the size of the list also decreases by 1.&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment">list.remove(1);</p>
+		<p class="space" >&nbsp;</p>
+		<img src="ArrayList4.png" style = "width:50%; height: auto; "alt="">
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">As you can see, the element at index 1 which was originally 12 has been removed from the ArrayList.&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation"><strong>size()</strong><br></br>  Finally, the size() method can return the number of elements in the list. For the traversal of
+		ArrayLists, the size() method can be used the same way the length feature would be used for an array in a for loop.&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<p class="codeSegment">list.size();</p>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">As there are two elements in this ArrayList, this statement returns the value of 2.&nbsp;</p>
+		<p class="space" >&nbsp;</p>
+		<div class="MsoNormal" style="margin: 0cm 0cm 0.0001pt; font-size: 12pt; font-family: Calibri, sans-serif; color: #000000;" align="center"><hr align="center" size="0" width="100%" /></div>
+		<p class="space" >&nbsp;</p>
+		<p class="explanation">Hopefully, this tutorial has given you the basic understanding of what an ArrayList is and 
+		how to implement some of it's methods.</p>
+		<a href="tutorials.html"><p class="linkBody">Back to Tutorials</p></a>
+	</div>
+  </body>
+</html>
+                           
